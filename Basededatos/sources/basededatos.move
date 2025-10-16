@@ -85,7 +85,7 @@ module basededatos::basededatos {
         let mut persona = base_de_datos.datos.get_mut(&id);
         let tipo = persona.tipo;
 
-        match (tipo) {
+        match (tipo) {clea
             Tipo::normal(Normal { descuento }) => descuento,
             Tipo::plus(Plus { descuento }) => descuento,
         }
